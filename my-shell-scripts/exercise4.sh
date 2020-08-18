@@ -1,5 +1,5 @@
 #!/bin/bash
-
+#I'll be very successful in programming!
 #FILE TEST
 FILE="/home/rafael/Documents/Trybe/trybe-exercises/my-shell-scripts/my-file.test"
 
