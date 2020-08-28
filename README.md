@@ -13,6 +13,7 @@ I started the course at **August 10, 2020** (class 07).
 Expected end date: **August 10, 2021** (1 year).
 
 ### Personal Goals: :hourglass_flowing_sand:
+- [ ] Do and complete all proposed activities.
 - [ ] Finish on-track. 
 - [ ] Achieve 100% in all evaluations and projects. 
 - [ ] Build a good network (trust and transparency) with the Trybe team and course colleagues.
