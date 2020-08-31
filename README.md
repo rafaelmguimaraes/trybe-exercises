@@ -36,7 +36,7 @@ Expected end date: **August 10, 2021** (1 year).
 ##### Block 4: Introduction - JavaScript
 - [x] 4-1: *JavaScript - Getting Started*
 - [x] 4-2: *JavaScript - For Array and Loop*
-- [ ] 4-3: *JavaScript - Programming Logic and Algorithms*
+- [x] 4-3: *JavaScript - Programming Logic and Algorithms*
 - [ ] 4-4: *JavaScript - Objects and functions*
 - [ ] 4-5: *Project - [Playground Functions]()*
 ##### Block 5: Introduction - JavaScript - Projects
