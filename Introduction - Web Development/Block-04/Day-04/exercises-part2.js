@@ -72,3 +72,30 @@ function biggerName(array) {
 
 testArray = ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'];
 console.log(biggerName(testArray));
+
+//5. Create a function that receives one array of integers and returns the integer that is more repeated.
+//Test array: [2, 3, 2, 5, 8, 2, 3];.
+//Expected value in return of function: 2.
+
+function mostFrequently(array) {
+    let numberFrequency = 1;
+    let numberMostFrequently = array[0];
+    for (let i in array) {
+        let numberTest = array[i];
+        let numberTestFrequency = 0;
+        for (let j in array) {
+            if (numberTest === array[j]){
+                numberTestFrequency+=1;
+            };
+        };
+        if (numberTestFrequency > numberFrequency) {
+            numberMostFrequently = numberTest;
+            numberFrequency = numberTestFrequency;
+        };
+    };
+    return numberMostFrequently;
+};
+
+testArray = [2, 3, 2, 5, 8, 2, 3, 8,8,8];
+console.log(mostFrequently(testArray));
+
