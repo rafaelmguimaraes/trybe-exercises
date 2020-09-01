@@ -13,4 +13,15 @@ let info = {
 // Expected value on the console: Bem-vinda, Margarida
 
 console.log(`Welcome, ${info.personagem}`);
-  
+
+//2. Insert a new property in the object with the key name "recurring" and the value "Yes" and then print the object on the console.
+//Expected value on the console:
+/* {
+    personagem: 'Margarida',
+    origem: 'Pato Donald',
+    nota: 'Namorada do personagem principal nos quadrinhos do Pato Donald',
+    recorrente: 'Sim'
+   }; 
+*/
+info.recorrente = `Sim`;
+console.log(info);
