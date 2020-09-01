@@ -38,3 +38,43 @@ recorrente
 for (let key in info) {
     console.log(key);
 };
+
+//4. Make a new one for/in, but now show all the key values ​​for the object.
+//Expected value on the console:
+/* 
+Margarida
+Pato Donald
+Namorada do personagem principal nos quadrinhos do Pato Donald
+Sim
+ */
+
+for (let key in info) {
+    console.log(info[key]);
+};
+
+//5. Now, define a second object with the same structure (the same keys) as the first and the following values: "Uncle Scrooge", "Christmas on Bear Mountain, Dell's Four Color Comics # 178", "The last MacPatinhas", "Yes" .
+//Expected value on the console:
+/* 
+Margarida e Tio Patinhas
+Pato Donald e Christmas on Bear Mountain, Dell's Four Color Comics #178
+Namorada do personagem principal nos quadrinhos do Pato Donald e O último MacPatinhas
+Ambos recorrentes // Atenção para essa última linha!
+ */
+let info2 = {
+    personagem: `Tio Patinhas`,
+    origem: `Christmas on Bear Mountain, Dell's Four Color Comics #178`,
+    nota: `O último MacPatinhas`,
+    recorrente: `Sim`,
+  }; 
+
+for (let key in info) {
+    if (key != `recorrente`) {
+        console.log(`${info[key]} e ${info2[key]}`);
+    } else {
+        if (info[key]===info2[key] && info[key]===`Sim`) {
+            console.log(`Ambos recorrentes`);
+        }
+    }
+    
+};
+
