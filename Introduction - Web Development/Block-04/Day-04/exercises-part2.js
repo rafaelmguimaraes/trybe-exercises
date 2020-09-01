@@ -37,3 +37,21 @@ function indexOfHighest(array) {
 
 let testArray = [2, 3, 6, 7, 10, 1];
 console.log(indexOfHighest(testArray));
+
+//3. Create a function that takes one arrayof the integers and returns the index of the lowest value.
+// Test array: [2, 4, 6, 7, 10, 0, -3];.
+// Expected value in return of function: 6.
+function indexOfLowest(array) {
+    let lowestValue = array[0];
+    let lowestIndex = 0;
+    for (let i = 1; i < array.length; i+=1) {
+        if (lowestValue > array[i]) {
+            lowestValue = array[i];
+            lowestIndex = i;
+        };
+    };
+    return lowestIndex;
+};
+
+testArray = [2, 4, 6, 7, 10, 0, -3];
+console.log(indexOfLowest(testArray));
