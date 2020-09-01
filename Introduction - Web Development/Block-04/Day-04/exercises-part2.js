@@ -113,3 +113,25 @@ function sumOfAllNumbersBefore(number) {
 };
 let value = 5;
 console.log(sumOfAllNumbersBefore(value));
+
+//7. Create a function that receives one string word and another string ending. Make sure the message string endingis the end of the message string word. Consider that a string ending will always be less than a string word.
+// Test value: "trybe" e "be"
+// Expected value on function return: true
+// verificaFimPalavra("trybe", "be");
+// Expected return: true
+// verificaFimPalavra("joaofernando", "fernan");
+// Expected return: false
+
+function testStringEnd(word, test) {
+    for (i = word.length - test.length; i < word.length; i+=1) {
+        if (word.charAt(i) != test.charAt(i-word.length+test.length)) {
+            return false;
+            break;
+        };
+    };
+    return true;
+};
+
+console.log(testStringEnd("trybe", "be"));
+console.log(testStringEnd("joaofernando", "fernan"));
+
