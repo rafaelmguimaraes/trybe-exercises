@@ -96,6 +96,20 @@ function mostFrequently(array) {
     return numberMostFrequently;
 };
 
-testArray = [2, 3, 2, 5, 8, 2, 3, 8,8,8];
+testArray = [2, 3, 2, 5, 8, 2, 3];
 console.log(mostFrequently(testArray));
 
+//6.Create a function that receives an integer N and returns the sum of all numbers from 1 to N.
+// Test value: N = 5.
+// Expected value in the function return: 1 + 2 + 3 + 4 + 5 = 15 .
+
+function sumOfAllNumbersBefore(number) {
+    let sumOfAll = 0;
+    for (let i = 1; i <= number; i+=1) {
+        sumOfAll += i;
+    }
+
+    return sumOfAll;
+};
+let value = 5;
+console.log(sumOfAllNumbersBefore(value));
