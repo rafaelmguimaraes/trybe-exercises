@@ -25,3 +25,16 @@ console.log(`Welcome, ${info.personagem}`);
 */
 info.recorrente = `Sim`;
 console.log(info);
+
+//3. Make one for/inthat shows all the keys of the object.
+//Expected value on the console:
+/* 
+personagem
+origem
+nota
+recorrente 
+*/
+
+for (let key in info) {
+    console.log(key);
+};
