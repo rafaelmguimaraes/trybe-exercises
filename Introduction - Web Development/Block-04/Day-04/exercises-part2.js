@@ -55,3 +55,20 @@ function indexOfLowest(array) {
 
 testArray = [2, 4, 6, 7, 10, 0, -3];
 console.log(indexOfLowest(testArray));
+
+//4. Create a function that receives one arrayof names and returns the name with the most characters.
+// Test array: ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'];.
+// Expected value in return of function: Fernanda.
+
+function biggerName(array) {
+    let bigger = array[0];
+    for (let i in array) {
+        if (bigger.length < array[i].length) {
+            bigger = array[i];
+        };
+    };
+    return bigger;
+};
+
+testArray = ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'];
+console.log(biggerName(testArray));
