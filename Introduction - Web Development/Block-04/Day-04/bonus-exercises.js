@@ -78,3 +78,26 @@ console.log(`MCMXCIV in numeral is ${romanNumeral('MCMXCIV')}`);
 // For the next exercise you will need to have an account at CodeWars, to understand how to do it access this the content we did about it. After following the registration steps, access the proposed challenge and then click on TRAIN, you will then be redirected to the page where the challenge should be done. When you have finished the exercise, click on TESTto check, with simple tests, if your solution satisfies what was requested. Passing these tests click on ATTEMPT, when doing this your code will go through all the existing tests to validate the solution. If your solution is correct, the buttonSUBMIT will be available, click on it to submit your answer, otherwise go back to your code and see what is still not satisfying what is requested, repeat this process until your solution is correct.
 // Challenge - 16 + 8 = 214 ;
 // This challenge will require a little knowledge about some métodosof the JavaScript, so do some research when necessary and if you have any questions ask for help on Slack. Doubts on how to do a good research? Smoothly! Access this content on how to search as a developer .
+
+function add(num1, num2) {
+    let numStr1 = num1.toString();
+    let numStr2 = num2.toString();
+    let resultStr = '';
+    
+    if (numStr1.length !== numStr2.length) {
+      if (numStr1.length > numStr2.length) {
+        numStr2 = `0`.repeat(numStr1.length - numStr2.length) + numStr2;
+      } else {
+        numStr1 = `0`.repeat(numStr2.length - numStr1.length) + numStr1;
+      };
+    }; 
+    
+    for (let i = 0; i < numStr1.length; i+=1) {
+      resultStr +=  (parseInt(numStr1.charAt(i)) + parseInt(numStr2.charAt(i))).toString();  
+    }
+    
+    
+    return parseInt(resultStr);
+  };
+
+  console.log(add(16,8));
