@@ -2,6 +2,7 @@
 // Atente que, sobre o custo do produto, incide um imposto de 20%.
 // Seu programa também deve emitir uma mensagem de erro e encerrar caso algum dos seus valores de entrada seja menor que zero.
 
+/* 
 let valorCusto = 100;
 let valorVenda = 150;
 
@@ -12,3 +13,18 @@ if (valorCusto <= 0 || valorVenda <=0)
     let lucroMil = (valorVenda-(valorCusto*1.2))* 1000; 
     console.log("Lucro da empresa = "+lucroMil.toString());
 }
+ */
+
+ function lucro (valorCusto, valorVenda) {
+    if (valorCusto <= 0 || valorVenda <=0)
+        {
+            console.log("Os valores de custo e/ou venda devem ser maior que 0.")
+        } else {
+            let lucroMil = (valorVenda-(valorCusto*1.2))* 1000; 
+            console.log("Lucro da empresa = "+lucroMil.toString());
+        }
+ };
+
+ lucro(100,150); 
+ lucro(-100,150); 
+ lucro(10,60); 
