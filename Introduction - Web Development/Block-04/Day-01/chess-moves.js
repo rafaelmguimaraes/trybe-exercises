@@ -3,6 +3,7 @@
 // Como dica, você pode pesquisar uma função que faz uma string ficar com todas as letras minúsculas (lower case).
 // Se a peça passada for inválida, o programa deve retornar uma mensagem de erro.
 
+/* 
 let piece = "QUeen";
 
 switch(piece.toLowerCase()) {
@@ -26,4 +27,35 @@ switch(piece.toLowerCase()) {
         break;
     default:
         console.log("Erro. Sorry, I didn't recognize the piece");
-  }
+  } 
+*/
+
+function chessMove (piece) {
+    switch(piece.toLowerCase()) {
+        case "king":
+          return "king-> one square in any direction.";
+          break;
+        case "queen":
+          return "queen-> diagonally, horizontally, or vertically any number of squares.";
+          break;
+        case "rook":
+            return "rook-> horizontally or vertically any number of squares.";
+            break;
+        case "bishop":
+            return "bishop-> diagonally any number of squares.";
+            break;
+        case "knight":
+            return "knight-> in an ‘L’ shape’: two squares in a horizontal or vertical direction.";
+            break;
+        case "pawn":
+            return "pawn > vertically forward one square.";
+            break;
+        default:
+            return "Erro. Sorry, I didn't recognize the piece.";
+      } 
+};
+
+let chessPieces = ['King','Queen','Rook','Bishop','Knight','PAWN'];
+for (let i in chessPieces) {
+    console.log(chessMove(chessPieces[i]));
+};
