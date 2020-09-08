@@ -67,18 +67,71 @@
             bodyElement.appendChild(h1Element);
 
         // 2. Adicione a tag div com a classe main-content como filho da tag body;
-            // create element h1
-            let divElement = document.createElement("DIV");
-            divElement.className = "main-content";
-            bodyElement.appendChild(divElement);
-            
+            // create element divMain
+            let divMainElement = document.createElement("DIV");
+            divMainElement.className = "main-content";
+            // append element divMain on body
+            bodyElement.appendChild(divMainElement);
+
         // 3. Adicione a tag div com a classe center-content como filho da tag div criada no passo 2;
+            // create element divCenter
+            let divCenterElement = document.createElement("DIV");
+            divCenterElement.className = "center-content";
+            // append element divCenter on divMain
+            divMainElement.appendChild(divCenterElement);
+
         // 4. Adicione a tag p como filho do div criado no passo 3 e coloque algum texto;
+            // create element p
+            let divPElement = document.createElement("P");
+            divPElement.innerHTML = "Algum Texto";
+            // append element p on divCenter
+            divCenterElement.appendChild(divPElement);
+
         // 5. Adicione a tag div com a classe left-content como filho da tag div criada no passo 2;
+            // create element divLeft
+            let divLeft = document.createElement("DIV");
+            divLeft.className = "left-content";
+            // append element divLeft on divMain
+            divMainElement.appendChild(divLeft);
+
         // 6. Adicione a tag div com a classe right-content como filho da tag div criada no passo 2;
+            // create element divRight
+            let divRight = document.createElement("DIV");
+            divRight.className = "right-content";
+            // append element divRight on divMain
+            divMainElement.appendChild(divRight);
+
         // 7. Adicione uma imagem com src configurado para o valor https://picsum.photos/200 e classe small-image. Esse elemento deve ser filho do div criado no passo 5;
+            // create element img
+            let img = document.createElement("IMG");
+            img.src = "https://picsum.photos/200";
+            img.className = "small-image";
+            // append element img on divLeft
+            divLeft.appendChild(img);
+
         // 8. Adicione uma lista não ordenada com os valores de 1 a 10 por extenso como valores da lista. Essa lista deve ser filha do div criado no passo 6;
+            // create element unorder list
+            let ul = document.createElement("UL");
+            // create 10 list items 
+            for (let i = 0; i < 10; i += 1) {
+                let li = document.createElement("LI");
+                li.innerHTML = "" + i;
+                // append element list item on unorder list
+                ul.appendChild(li);
+            }
+            // append element ul on divRight
+            divRight.appendChild(ul);
+
         // 9. Adicione 3 tags h3, todas sendo filhas do div criado no passo 2.
+            // create 3 h3 elements
+            for (let i = 0; i < 3; i += 1) {
+                let h3Element = document.createElement("H3");
+                h3Element.innerHTML = "h3:" + (i+1);
+                // append element h3 on divMain
+                divMainElement.appendChild(h3Element);
+            }
+            
+        
 
     </script>
   </body>
