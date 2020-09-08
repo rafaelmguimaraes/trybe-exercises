@@ -32,13 +32,13 @@ Expected end date: **August 10, 2021** (1 year).
 - [x] 3-2: *HTML & CSS - Getting Started with CSS*
 - [x] 3-3: *HTML & CSS - Selectors and positioning*
 - [x] 3-4: *Semantic HTML (HTML5)*
-- [x] 3-5: *[Project - HTML & CSS](/trybe-projects/tree/master/B03-D05_HTML-CSS)*
+- [x] 3-5: *[Project - HTML & CSS](https://github.com/rafaelmguimaraes/trybe-projects/tree/master/B03-D05_HTML-CSS)*
 ##### Block 4: Introduction - JavaScript
 - [x] 4-1: *JavaScript - Getting Started*
 - [x] 4-2: *JavaScript - For Array and Loop*
 - [x] 4-3: *JavaScript - Programming Logic and Algorithms*
 - [x] 4-4: *JavaScript - Objects and functions*
-- [x] 4-5: *Project - [Playground Functions](/trybe-projects/tree/master/B04-D05_PLAYGROUND-FUNCTIONS)*
+- [x] 4-5: *[Project - Playground Functions](https://github.com/rafaelmguimaraes/trybe-projects/tree/master/B04-D05_PLAYGROUND-FUNCTIONS)*
 ##### Block 5: Introduction - JavaScript - Projects
 - [x] 5-1: *JavaScript - DOM and selectors*
 - [x] 5-2: *JavaScript - Working with elements*
