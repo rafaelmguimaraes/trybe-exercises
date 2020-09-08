@@ -116,7 +116,7 @@
             // create 10 list items 
             for (let i = 0; i < 10; i += 1) {
                 let li = document.createElement("LI");
-                li.innerHTML = "" + i;
+                li.innerHTML = "" + (i+1);
                 // append element list item on unorder list
                 ul.appendChild(li);
             }
@@ -159,7 +159,14 @@
           let divCenterContent = document.querySelector(".center-content");
           // set parent style background color = green 
           divCenterContent.parentElement.style.backgroundColor = "green";
+
         // 6. Remova os dois últimos elementos (nove e dez) da lista criada no passo 8.
+          // get ul by class name of parent 
+          let ulElement = document.querySelector(".right-content ul");  
+          // Remove the previous last and last child 
+          ulElement.removeChild(ulElement.lastElementChild.previousElementSibling);
+          ulElement.removeChild(ulElement.lastElementChild);
+          
 
     </script>
   </body>
