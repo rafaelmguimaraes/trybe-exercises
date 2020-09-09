@@ -52,36 +52,68 @@
     percent.addEventListener("click",makeOperation);
     area.addEventListener("click",makeOperation);
 
-    // function makeOperation
+    // bonus - event keypress on input elements
+    document.getElementById("square-input").addEventListener("keyup",makeOperation);
+    document.getElementById("half-input").addEventListener("keyup",makeOperation);
+    document.getElementById("percent1-input").addEventListener("keyup",makeOperation);
+    document.getElementById("percent2-input").addEventListener("keyup",makeOperation);
+    document.getElementById("area-input").addEventListener("keyup",makeOperation);
+
+    // square function
+    function squareFunction(num) {
+        return "Result of square is: " + Math.pow(num,2);
+    }
+
+    // half function
+    function halfFunction(num) {
+        return "Result of half is: " + num / 2;
+    }
+    // percent function
+    function percentFunction(num1,num2) {
+        return "Result of percent is: " + ((num1 / num2) * 100) + "%";
+    }
+
+    // area function
+    function areaFunction(num) {
+        return "Result of area is: " + Math.PI * Math.pow(num, 2);
+    }
+
+    // function makeOperation 
     function makeOperation(event) {
         // for each button, execute relative operation and put the value on result
+        // bonus - for each input too
         let result = "";
         let input, input2;
         switch(event.target.id) {
             case "square-button":
+            case "square-input":
                 // get input
                 input = document.getElementById("square-input");
                 // get result
-                result = "Result of square is: " + Math.pow(input.value,2);
+                result = squareFunction(input.value);
                 break;
             case "half-button":
+            case "half-input":
                 // get input
                 input = document.getElementById("half-input");
                 // get result
-                result = "Result of half is: " + input.value / 2;
+                result = halfFunction(input.value);
                 break;
             case "percent-button":
+            case "percent1-input":
+            case "percent2-input":
                 // get input
                 input = document.getElementById("percent1-input");
                 input2 = document.getElementById("percent2-input");
                 // get result
-                result = "Result of percent is: " + ((input.value / input2.value) * 100) + "%";
+                result = percentFunction(input.value, input2.value);
                 break;
             case "area-button":
+            case "area-input":
                 // get input
                 input = document.getElementById("area-input");
                 // get result
-                result = "Result of area is: " + Math.PI * Math.pow(input.value, 2);
+                result = areaFunction(input.value);
                 break;
         }
         // show result in solution
