@@ -13,7 +13,14 @@
 
       function catWalk() {
         let img = document.getElementsByTagName("img")[0];
-        img.style.left = parseInt(img.style.left) + 10 + "px";
+        let w = window.innerWidth;
+
+        if (parseInt(img.style.left) < w) {
+            img.style.left = parseInt(img.style.left) + 10 + "px";
+        } else {
+            img.style.left = "0";
+        }
+        
       }
 
       window.setInterval(catWalk,50);
