@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <title>Cat Walk</title>
+ </head>
+ <body>
+  
+  <img style="position:absolute;" src="http://www.anniemation.com/clip_art/images/cat-walk.gif">
+  <script>
+      let img = document.getElementsByTagName("img")[0];
+      img.style.left = "0";
+      let rightDirection = true;
+      let interval;
+
+
+      function catWalk() {
+        let img = document.getElementsByTagName("img")[0];
+        let w = window.innerWidth - 296; // cat width 296px
+        let middle = Math.round(w / 2);
+        let currentPos = parseInt(img.style.left);
+        
+        console.log("Before - Position:",currentPos);
+        console.log("Before - rightDirection:",rightDirection);
+
+        if (currentPos > w || currentPos < 0) {
+            rightDirection = !rightDirection;
+        } else if (currentPos > (middle - 5) && currentPos < (middle + 5) ) {
+            // set timeout 10 seconds to call catWalk again
+            setTimeout(setupCatWalk, 10000);
+            // stop walk animation 
+            clearInterval(interval);
+            // change image 
+            let img = document.getElementsByTagName("img")[0].src = "https://media1.tenor.com/images/c7ac05e928d8d4c6fdc88a276743d833/tenor.gif?itemid=12732115";
+        }
+
+        // Go to 10px to right or left
+        if (rightDirection) {
+            img.style.left = currentPos + 10 + "px";
+        } else {
+            img.style.left = currentPos - 10 + "px";
+        }
+       
+      }
+
+      function setupCatWalk() {
+        // set star cat walk img
+        document.getElementsByTagName("img")[0].src="http://www.anniemation.com/clip_art/images/cat-walk.gif";        
+        // ativate catWalk
+        interval = window.setInterval(catWalk,50);
+      }
+
+      interval = window.setInterval(catWalk,50);
+   
+  </script>
+ </body>
+</html>
