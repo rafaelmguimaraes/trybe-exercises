@@ -10,17 +10,26 @@
   <script>
       let img = document.getElementsByTagName("img")[0];
       img.style.left = "0";
+      let rightDirection = true;
 
       function catWalk() {
         let img = document.getElementsByTagName("img")[0];
-        let w = window.innerWidth;
-
-        if (parseInt(img.style.left) < w) {
-            img.style.left = parseInt(img.style.left) + 10 + "px";
-        } else {
-            img.style.left = "0";
-        }
+        let w = window.innerWidth - 296; // cat width 296px
+        let currentPos = parseInt(img.style.left);
         
+        console.log("Before - Position:",currentPos);
+        console.log("Before - rightDirection:",rightDirection);
+
+        if (currentPos > w || currentPos < 0) {
+            rightDirection = !rightDirection;
+        }
+
+        if (rightDirection) {
+            img.style.left = currentPos + 10 + "px";
+        } else {
+            img.style.left = currentPos - 10 + "px";
+        }
+       
       }
 
       window.setInterval(catWalk,50);
