@@ -83,6 +83,23 @@
         console qual dos eventos acabou de ocorrer.
       </p>
       <!-- Adicione a tag <img /> aqui -->
+      <img src="check-mark-bw.png" style="height: 50px;" id="img-check">
     </div>
+    <script>
+        // get img element and add events
+        let img = document.getElementById("img-check");
+        img.addEventListener("mouseover",changeImg);
+        img.addEventListener("mouseout",changeImg);
+
+        // function to change img src and log event type
+        function changeImg(event) {
+            console.log(event.type);
+            if (event.type == "mouseover") {
+                document.getElementById("img-check").src = "check-full.png";
+            } else {
+                document.getElementById("img-check").src = "check-mark-bw.png";
+            }
+        }
+    </script>
   </body>
 </html>
