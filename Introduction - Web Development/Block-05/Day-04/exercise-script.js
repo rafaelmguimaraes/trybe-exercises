@@ -6,16 +6,20 @@ window.onload = function() {
         fontSize:"1.5em",
         fontType:"Times New Roman",
     }
-
+    // to help apply style properties
     let styleKeys = {
         backgroundColor:"background-color",
         textColor:"color",
         fontSize:"font-size",
         fontType:"font-family",
     }
-    
+    // load Preferences
     loadPreferences();
-    changePreferences(); 
+
+    // apply preferences
+    changePreferences();
+    
+    // add button event to change preferences
     document.getElementById("change-button").addEventListener("click",changePreferences);
 
     // Load all preferences to read the content
@@ -45,6 +49,7 @@ window.onload = function() {
         }
     }
 
+    // Apply preferences from input
     function changePreferences() {
         let styleToAplly = '';
 
@@ -60,8 +65,9 @@ window.onload = function() {
             // save preference on Storage
             localStorage.setItem(preference,value);
         }   
-        
+        // get div content element
         let divContent = document.querySelector(".container_content");
+        // aplly style
         divContent.setAttribute("style", styleToAplly);
     } 
 }

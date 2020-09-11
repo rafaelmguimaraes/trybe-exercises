@@ -42,8 +42,8 @@ Expected end date: **August 10, 2021** (1 year).
 ##### Block 5: Introduction - JavaScript - Projects
 - [x] 5-1: *JavaScript - DOM and selectors*
 - [x] 5-2: *JavaScript - Working with elements*
-- [ ] 5-3: *JavaScript - Events*
-- [ ] 5-4: *JavaScript - Web Storage*
+- [x] 5-3: *JavaScript - Events*
+- [x] 5-4: *JavaScript - Web Storage*
 - [ ] 5-5: *[Project - Meme Generator]()*
 - [ ] 5-6: *[Project - Art with Pixels]()*
 - [ ] 5-7: *[Project - Task List]()*
