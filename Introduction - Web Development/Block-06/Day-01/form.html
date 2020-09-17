@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Content Reader</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <!-- CABEÇALHO -->
+  <header class="resume-header">
+    <h1>Envie Seu Currículo</h1>
+  </header>
+
+  <!-- FORMULARIO -->
+  <form action="" method="get" class="resume-form">
+    
+    <!-- DADOS PESSOAIS -->
+    <fieldset class="field">
+      <legend>Dados Pessoais</legend>
+      
+      <!-- NOME -->
+      <div class="resume-line">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="informe seu nome" required="required" maxlength="40">
+      </div>
+
+      <!-- EMAIL -->
+      <div class="resume-line">
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" placeholder="informe seu e-mail" required="required" maxlength="50">
+      </div>
+      
+      <!-- CPF -->
+      <div class="resume-line">
+        <label for="cpf">CPF:</label>
+        <input type="text" id="cpf" name="cpf" placeholder="informe seu CPF" required="required" maxlength="11">
+      </div>
+
+      <!-- ENDERECO -->
+      <div class="resume-line">
+        <label for="endereco">Endereço:</label>
+        <input type="text" id="endereco" name="endereco" placeholder="informe seu endereço" required="required" maxlength="200">
+      </div>
+
+      <!-- CIDADE -->
+      <div class="resume-line">
+        <label for="cidade">Cidade:</label>
+        <input type="text" id="cidade" name="cidade" placeholder="informe sua cidade" required="required" maxlength="28">
+      </div>
+
+      <!-- ESTADO -->
+      <div class="resume-line">
+        <label for="estado">Estado:</label>
+        <select id="estado" name="estado" required="required">
+          <option value="" disabled="disabled" selected="selected" hidden>escolha seu estado</option>
+        </select>
+      </div>
+    
+      <!-- NOME -->
+      <div class="resume-line">
+        <input type="radio" id="tipo-casa" name="tipo-endereco" value="casa">
+        <label for="tipo-casa">Casa</label>
+        <input type="radio" id="tipo-apto" name="tipo-endereco" value="apartamento">
+        <label for="tipo-apto">Apartamento</label>
+        <input type="radio" id="tipo-outro" name="tipo-endereco" value="outro">
+        <label for="tipo-outro">Outro</label>
+      </div>
+    </fieldset>
+
+    <!-- ÚLTIMO EMPREGO -->
+    <fieldset class="field">
+      <legend>Último Emprego</legend>
+      
+      <!-- RESUMO DO CURRICULO -->
+      <div class="resume-line">
+        <label for="resumo">Resumo do Currículo:</label>
+        <textarea name="resumo" id="resumo" maxlength="1000" rows="6" required="required"></textarea>
+        <p><em>Descreva em 1000 palavras ou menos</em></p>
+      </div>
+
+      <!-- CARGO -->
+      <div class="resume-line">
+        <label for="cargo">Cargo:</label>
+        <input type="text" id="cargo" name="cargo" placeholder="informe seu cargo" required="required" maxlength="40">
+      </div>
+
+      <!-- DESCRICAO DO CARGO -->
+      <div class="resume-line">
+        <label for="descricao">Descrição do Cargo:</label>
+        <input type="text" id="descricao" name="descricao" placeholder="informe a descricao do seu cargo" required="required" maxlength="500">
+      </div>
+
+      <!-- DATA DE INICIO -->
+      <div class="resume-line">
+        <label for="data-inicio">Data de Início:</label>
+        <input type="date" id="data-inicio" name="data-inicio" required="">
+      </div>
+      
+    </fieldset>
+
+    <!-- BOTÃO LIMPAR -->
+    <div class="resume line">
+      <button type="submit" id="limpar">Limpar</button>
+    </div>
+
+  </form>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
