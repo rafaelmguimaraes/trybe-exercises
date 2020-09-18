@@ -37,7 +37,22 @@ function stopDefAction(evt) {
 }
 
 window.onload = function () {
-    configuraListaEstados();
-    document.getElementById('cpf').addEventListener('keyup',formataCPF);
-    document.getElementById('limpar').addEventListener('click', stopDefAction, false);
+  
+  configuraListaEstados();
+  document.getElementById('cpf').addEventListener('keyup',formataCPF);
+  document.getElementById('limpar').addEventListener('click', stopDefAction, false);
+
+  var picker = new Pikaday({ 
+    field: document.getElementById('data-inicio'),
+    format: 'DD/MM/YYYY',
+    toString(date, format) {
+        // you should do formatting based on the passed format,
+        // but we will just return 'D/M/YYYY' for simplicity
+        const day = date.getDate();
+        const month = date.getMonth() + 1;
+        const year = date.getFullYear();
+        return `${day}/${month}/${year}`; }
+  });
+  
+  
 }
