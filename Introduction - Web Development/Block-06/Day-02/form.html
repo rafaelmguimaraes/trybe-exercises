@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Content Reader</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <!-- BOOTSTRAP CSS only -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <!-- BOOTSTRAP JS, Popper.js, and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- CABEÇALHO -->
+  <header class="resume-header">
+    <h1 class="display-4 ">Envie Seu Currículo</h1>
+  </header>
+
+  <!-- FORMULARIO -->
+  <form action="" method="get" class="resume-form">
+    
+    <!-- DADOS PESSOAIS -->
+    <fieldset class="field">
+      <legend>Dados Pessoais</legend>
+      
+      <!-- NOME -->
+      <div class="form-group" >
+        <label for="nome">Nome:</label>
+        <input class="form-control" type="text" id="nome" name="nome" placeholder="informe seu nome" required="required" maxlength="40">
+      </div>
+
+      <!-- EMAIL -->
+      <div  class="form-group">
+        <label for="email">Email:</label>
+        <input class="form-control" type="text" id="email" name="email" placeholder="informe seu e-mail" required="required" maxlength="50">
+      </div>
+      
+      <!-- CPF -->
+      <div  class="form-group">
+        <label for="cpf">CPF:</label>
+        <input class="form-control" type="text" id="cpf" name="cpf" placeholder="informe seu CPF" required="required" maxlength="11">
+      </div>
+
+      <!-- ENDERECO -->
+      <div  class="form-group">
+        <label for="endereco">Endereço:</label>
+        <input class="form-control" type="text" id="endereco" name="endereco" placeholder="informe seu endereço" required="required" maxlength="200">
+      </div>
+
+      <!-- CIDADE -->
+      <div  class="form-group">
+        <label for="cidade">Cidade:</label>
+        <input class="form-control" type="text" id="cidade" name="cidade" placeholder="informe sua cidade" required="required" maxlength="28">
+      </div>
+
+      <!-- ESTADO -->
+      <div  class="form-group">
+        <label for="estado">Estado:</label>
+        <select class="form-control" id="estado" name="estado" required="required">
+          <option value="" disabled="disabled" selected="selected" hidden>escolha seu estado</option>
+        </select>
+      </div>
+    
+      <!-- NOME -->
+      <div  class="form-check">
+        <input class="form-check-input" type="radio" id="tipo-casa" name="tipo-endereco" value="casa">
+        <label class="form-check-label" for="tipo-casa">Casa</label>
+      </div>
+      <div  class="form-check">
+        <input class="form-check-input" type="radio" id="tipo-apto" name="tipo-endereco" value="apartamento">
+        <label class="form-check-label" for="tipo-apto">Apartamento</label>
+      </div>
+      <div  class="form-check">        
+        <input class="form-check-input" type="radio" id="tipo-outro" name="tipo-endereco" value="outro">
+        <label class="form-check-label" for="tipo-outro">Outro</label>
+      </div>
+    </fieldset>
+
+    <!-- ÚLTIMO EMPREGO -->
+    <fieldset class="field">
+      <legend>Último Emprego</legend>
+      
+      <!-- RESUMO DO CURRICULO -->
+      <div  class="form-group">
+        <label for="resumo">Resumo do Currículo:</label>
+        <textarea class="form-control" name="resumo" id="resumo" maxlength="1000" rows="6" required="required"></textarea>
+        <p class="form-text text-muted"><em>Descreva em 1000 palavras ou menos</em></p>
+      </div>
+
+      <!-- CARGO -->
+      <div  class="form-group">
+        <label for="cargo">Cargo:</label>
+        <input class="form-control" type="text" id="cargo" name="cargo" placeholder="informe seu cargo" required="required" maxlength="40">
+      </div>
+
+      <!-- DESCRICAO DO CARGO -->
+      <div  class="form-group">
+        <label for="descricao">Descrição do Cargo:</label>
+        <input class="form-control" type="text" id="descricao" name="descricao" placeholder="informe a descricao do seu cargo" required="required" maxlength="500">
+      </div>
+
+      <!-- DATA DE INICIO -->
+      <div  class="form-group">
+        <label for="data-inicio">Data de Início:</label>
+        <input class="form-control" type="date" id="data-inicio" name="data-inicio" required="">
+      </div>
+      
+    </fieldset>
+
+    <!-- BOTÃO LIMPAR -->
+    <div >
+      <button class="btn btn-success" type="submit" id="limpar">Limpar</button>
+    </div>
+
+  </form>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
