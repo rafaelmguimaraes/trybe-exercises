@@ -31,17 +31,11 @@ function formataCPF(event){
   event.target.value = inputCPF;
 } 
 
-/* function stopDefAction(evt) {
-  
-  evt.preventDefault(); 
-} */
-
 window.onload = function () {
   
   configuraListaEstados();
   document.getElementById('cpf').addEventListener('keyup',formataCPF);
-  // document.getElementById('limpar').addEventListener('click', stopDefAction, false);
-
+  
   var picker = new Pikaday({ 
     field: document.getElementById('data-inicio'),
     format: 'DD/MM/YYYY',
