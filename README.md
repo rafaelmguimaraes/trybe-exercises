@@ -44,10 +44,18 @@ Expected end date: **August 10, 2021** (1 year).
 - [x] 5-2: *JavaScript - Working with elements*
 - [x] 5-3: *JavaScript - Events*
 - [x] 5-4: *JavaScript - Web Storage*
-- [ ] 5-5: *[Project - Meme Generator]()*
-- [ ] 5-6: *[Project - Art with Pixels]()*
-- [ ] 5-7: *[Project - Task List]()*
-- [ ] 5-Bonus: *[Project - Guess the Color]()*
-- [ ] 5-Bonus: *[Project - Mysterious Card]()*
+- [x] 5-5: *[Project - Meme Generator]()*
+- [x] 5-6: *[Project - Art with Pixels]()*
+- [x] 5-7: *[Project - Task List]()*
+- [x] 5-Bonus: *[Project - Guess the Color]()*
+- [x] 5-Bonus: *[Project - Mysterious Card]()*
+##### Block 6: Introduction - HTML & CSS - Forms
+- [x] 6-1: *HTML & CSS - Forms*
+- [x] 6-2: *JavaScript libraries and Frameworks CSS*
+- [x] 6-3: *Introduction - CSS Flexbox*
+- [x] 6-3: *CSS Flexbox - Part 1*
+- [x] 6-4: *CSS Flexbox - Part 2*
+- [x] 6-5: *Resṕonsive CSS - Mobile First*
+- [x] 6-6: *[Project - Facebook Home]()*
 
 # [...]
