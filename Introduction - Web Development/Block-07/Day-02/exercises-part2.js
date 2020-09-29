@@ -82,3 +82,18 @@ const verifyPair = (objectLesson, lessonProperty, lessonValue) => objectLesson.h
 console.log(verifyPair(lesson3, 'turno', 'noite'));
 console.log(verifyPair(lesson3, 'materia', 'Maria Clara'));
 console.log(verifyPair(lesson3, 'xablau', 'bliu'));
+
+
+/* BONUS */
+// Crie uma função para contar quantos estudantes assistiram às aulas de Matemática. 
+// Use o objeto criado no exercício 5.
+
+const sumStudentsMathLesson = objectAllLessons => {
+    let countStudents = 0;
+    for (lesson of objectAllLessons) {
+        (lesson['materia'] === 'Matemática') ? countStudents += lesson['numeroEstudantes'] : 0;
+    }
+    return countStudents;
+}
+
+console.log(sumStudentsMathLesson(allLessons));
