@@ -49,3 +49,14 @@ allLessons.push(Object.assign({}, lesson1));
 allLessons.push(Object.assign({}, lesson2));
 allLessons.push(Object.assign({}, lesson3));
 console.log(allLessons);
+
+// Usando o objeto criado no exercício 5, crie uma função que retorne o número total
+//  de estudantes em todas as aulas.
+const sumAllStudents = objectLessons => {
+    countStudents = 0; 
+    for (lesson of objectLessons) { 
+        countStudents += lesson['numeroEstudantes'];
+    }
+    return countStudents;
+}
+console.log(sumAllStudents(allLessons));
