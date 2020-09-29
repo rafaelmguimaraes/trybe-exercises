@@ -33,6 +33,19 @@ const showKeys = lessonObject => Object.keys(lessonObject);
 console.table(showKeys(lesson1));
 
 // 3.Crie uma função para mostrar o tamanho de um objeto.
+const showlength = lessonObject => Object.keys(lessonObject).length;
+console.table(showlength(lesson1));
 
 // 4,Crie uma função para listar os valores de um objeto. 
 // Essa função deve receber um objeto como parâmetro.
+const showValues = lessonObject => Object.values(lessonObject);
+console.table(showValues(lesson1));
+
+// Crie um objeto de nome allLessons, que deve agrupar todas as aulas através do 
+// Object.assign. Cada chave desse novo objeto será uma aula, sendo essas chaves: 
+// lesson1, lesson2 e lesson3. 
+const allLessons = []; 
+allLessons.push(Object.assign({}, lesson1));
+allLessons.push(Object.assign({}, lesson2));
+allLessons.push(Object.assign({}, lesson3));
+console.log(allLessons);
