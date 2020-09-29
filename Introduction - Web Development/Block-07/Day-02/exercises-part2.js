@@ -41,7 +41,7 @@ console.table(showlength(lesson1));
 const showValues = lessonObject => Object.values(lessonObject);
 console.table(showValues(lesson1));
 
-// Crie um objeto de nome allLessons, que deve agrupar todas as aulas através do 
+// 5.Crie um objeto de nome allLessons, que deve agrupar todas as aulas através do 
 // Object.assign. Cada chave desse novo objeto será uma aula, sendo essas chaves: 
 // lesson1, lesson2 e lesson3. 
 const allLessons = []; 
@@ -50,7 +50,7 @@ allLessons.push(Object.assign({}, lesson2));
 allLessons.push(Object.assign({}, lesson3));
 console.log(allLessons);
 
-// Usando o objeto criado no exercício 5, crie uma função que retorne o número total
+// 6.Usando o objeto criado no exercício 5, crie uma função que retorne o número total
 //  de estudantes em todas as aulas.
 const sumAllStudents = objectLessons => {
     countStudents = 0; 
@@ -60,3 +60,25 @@ const sumAllStudents = objectLessons => {
     return countStudents;
 }
 console.log(sumAllStudents(allLessons));
+
+
+// 7.Crie uma função que obtenha o valor da chave de acordo com a sua posição no objeto. 
+// Por exemplo:
+// console.log(getValueByNumber(lesson1, 0));
+// Output: 'Matématica'
+
+const getValueByNumber = (objectLesson,indexProperty) => Object.values(objectLesson)[indexProperty];
+console.log(getValueByNumber(lesson1, 0));
+
+// 8.Crie uma função que verifique se o par (chave / valor) existe na função. 
+// Essa função deve possuir três parâmetros, sendo eles: o objeto, o nome da chave 
+// e o valor da chave. Exemplo:
+// console.log(verifyPair(lesson3, 'turno', 'noite'));
+// Output: true,
+// console.log(verifyPair(lesson3, 'materia', 'Maria Clara'));
+// Output: false
+
+const verifyPair = (objectLesson, lessonProperty, lessonValue) => objectLesson.hasOwnProperty(lessonProperty) ? objectLesson[lessonProperty] === lessonValue : false;
+console.log(verifyPair(lesson3, 'turno', 'noite'));
+console.log(verifyPair(lesson3, 'materia', 'Maria Clara'));
+console.log(verifyPair(lesson3, 'xablau', 'bliu'));
