@@ -69,7 +69,7 @@ const expected_result = 'O Senhor dos Anéis';
 // começa com três iniciais (terminam com um ponto).
 
 function authorWith3DotsOnName() {
-  return books.filter(book => /([A-Z]\.\s){3}/.test(book.author.name))[0]?.name;
+  return books.filter(book => /^([A-Z]\.\s){3}/.test(book.author.name))[0]?.name;
 }
 
 assert.deepEqual(authorWith3DotsOnName(), expected_result);
