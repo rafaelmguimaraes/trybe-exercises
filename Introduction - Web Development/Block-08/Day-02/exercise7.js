@@ -16,7 +16,7 @@ const books = [
     name: 'O Senhor dos Anéis',
     genre: 'Fantasia',
     author: {
-      name: 'J. R. R. Tolkien',
+      name: 'JR. R. R. Tolkien',
       birthYear: 1892,
     },
     releaseYear: 1954,
@@ -69,7 +69,7 @@ const expected_result = 'O Senhor dos Anéis';
 // começa com três iniciais (terminam com um ponto).
 
 function authorWith3DotsOnName() {
-  return books.filter(book => /^([A-Z]\.\s){3}/.test(book.author.name))[0]?.name;
+  return books.find(book => /^([A-Z]\.\s){3}/.test(book.author.name))?.name;
 }
 
 assert.deepEqual(authorWith3DotsOnName(), expected_result);
