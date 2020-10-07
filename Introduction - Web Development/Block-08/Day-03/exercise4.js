@@ -16,7 +16,7 @@ const books = [
     name: 'O Senhor dos Anéis',
     genre: 'Fantasia',
     author: {
-      name: 'JR. R. R. Tolkien',
+      name: 'J. R. R. Tolkien',
       birthYear: 1892,
     },
     releaseYear: 1954,
@@ -34,7 +34,6 @@ const books = [
   {
     id: 4,
     name: 'Duna',
-    genre: 'Ficção Científica',
     author: {
       name: 'Frank Herbert',
       birthYear: 1920,
@@ -63,13 +62,24 @@ const books = [
   },
 ];
 
-const expected_result = 'O Senhor dos Anéis';
+const expected_result = {
+  author: {
+    birthYear: 1948,
+    name: 'George R. R. Martin'
+  },
+  genre: 'Fantasia',
+  id: 1,
+  name: 'As Crônicas de Gelo e Fogo',
+  releaseYear: 1991
+};
 
-// Encontre o nome do livro escrito pela pessoa cujo nome registrado 
-// começa com três iniciais (terminam com um ponto).
+// Encontre o livro com o maior nome.
 
-function authorWith3DotsOnName() {
-  return books.find(book => /^([A-Z]\.\s){3}/.test(book.author.name))?.name;
+function longestNamedBook() {
+   return books.find(book => book.name === 
+            books
+            .map(book => book.name)
+            .reduce((biggerName, name) => biggerName.length < name.length ? name : biggerName,'')
+            );
 }
-
-assert.deepEqual(authorWith3DotsOnName(), expected_result);
+assert.deepEqual(longestNamedBook(), expected_result);

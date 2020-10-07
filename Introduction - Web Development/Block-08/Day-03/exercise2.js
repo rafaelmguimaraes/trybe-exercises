@@ -1,3 +1,4 @@
+    
 const assert = require('assert');
 
 const books = [
@@ -16,7 +17,7 @@ const books = [
     name: 'O Senhor dos Anéis',
     genre: 'Fantasia',
     author: {
-      name: 'JR. R. R. Tolkien',
+      name: 'J. R. R. Tolkien',
       birthYear: 1892,
     },
     releaseYear: 1954,
@@ -63,13 +64,16 @@ const books = [
   },
 ];
 
-const expected_result = 'O Senhor dos Anéis';
+// Crie uma string com os nomes de todas as pessoas autoras.
 
-// Encontre o nome do livro escrito pela pessoa cujo nome registrado 
-// começa com três iniciais (terminam com um ponto).
-
-function authorWith3DotsOnName() {
-  return books.find(book => /^([A-Z]\.\s){3}/.test(book.author.name))?.name;
+function allNames() {
+    return books.reduce(
+        (names, book, index, allbooks) => {
+            if (index < allbooks.length - 1) 
+                return names + ` ${book.author.name},`;
+            return names + ` ${book.author.name}.`;   
+        }
+        , 'Nomes:');
 }
 
-assert.deepEqual(authorWith3DotsOnName(), expected_result);
+assert.deepEqual(allNames(), "Nomes: George R. R. Martin, J. R. R. Tolkien, Isaac Asimov, Frank Herbert, Stephen King, H. P. Lovecraft.");

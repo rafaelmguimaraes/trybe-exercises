@@ -16,7 +16,7 @@ const books = [
     name: 'O Senhor dos Anéis',
     genre: 'Fantasia',
     author: {
-      name: 'JR. R. R. Tolkien',
+      name: 'J. R. R. Tolkien',
       birthYear: 1892,
     },
     releaseYear: 1954,
@@ -63,13 +63,13 @@ const books = [
   },
 ];
 
-const expected_result = 'O Senhor dos Anéis';
+const expected_result = 43;
 
-// Encontre o nome do livro escrito pela pessoa cujo nome registrado 
-// começa com três iniciais (terminam com um ponto).
+// Calcule a média de idade que as pessoas autoras tinham quando 
+// seus respectivos livros foram lançados.
 
-function authorWith3DotsOnName() {
-  return books.find(book => /^([A-Z]\.\s){3}/.test(book.author.name))?.name;
+function averageAge() {
+  return books.reduce((sumAge,book) => sumAge + (book.releaseYear - book.author.birthYear) ,0) / books.length;
 }
 
-assert.deepEqual(authorWith3DotsOnName(), expected_result);
+assert.equal(averageAge(), expected_result);
