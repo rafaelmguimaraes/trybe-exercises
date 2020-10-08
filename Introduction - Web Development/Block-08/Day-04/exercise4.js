@@ -33,7 +33,7 @@ const people = [
 // Dica: use object destructuring.
 // escreva filterPeople abaixo
 
-const filterPeople = allPeople => allPeople.filter(australian => australian.nationality === "Australian" && australian.bornIn < 2000)
+const filterPeople = allPeople => allPeople.filter(({nationality, bornIn}) => nationality === "Australian" && bornIn < 2000 && bornIn >= 1000);
 
 const filteredPeople = filterPeople(people);
 
