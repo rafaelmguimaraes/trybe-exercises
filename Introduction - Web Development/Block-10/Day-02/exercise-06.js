@@ -9,17 +9,18 @@ const findAnimalByName = (name) => (
   new Promise((resolve, reject) => {
     setTimeout(() => {
       const result = Animals.find(animal => animal.name === name);
-      if (result !== null) {
+      if (result) {
         return resolve(result);
       }
-      return reject({ error: 'Nenhum animal com esse nome!' });
+      console.log(result);
+      return reject('Nenhum animal com esse nome!');
     }, 100);
   })
 )
 
-const getAnimal = (name) => {
+const getAnimal = (name) => (
   findAnimalByName(name).then(animal => animal)
-}
+)
 
 const findAnimalsByAge = (age) => (
   new Promise((resolve, reject) => {
