@@ -81,4 +81,4 @@ Expected end date: **August 10, 2021** (1 year).
 - [x] 10-3: Jest - Simulating behaviors
 - [ ] 10-4: Project - Asynchronous Jest and Mocking
 
-# [...]
+### [...]
