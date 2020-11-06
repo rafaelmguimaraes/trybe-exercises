@@ -1,0 +1,27 @@
+.pokedex {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: stretch;
+  width: 600px;
+  margin: auto;
+  position: relative;
+  top: 50px;
+  background-color: white;
+  border-radius: 30px;
+}
+
+.title-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 100%;
+  margin: 20px 10px 0px 10px;
+}
+
+.pokemon-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 100%;
+  margin: 10px 20px;
+}
