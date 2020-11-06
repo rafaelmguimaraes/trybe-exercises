@@ -20,7 +20,7 @@ Expected end date: **August 10, 2021** (1 year).
 ##### III. Back-end Development (Blocks 20 to 30)
 ##### IV. Computer Science (Blocks 31 to 39)
 
-## Fundamentals of Web Development :hourglass_flowing_sand:
+## Fundamentals of Web Development :heavy_check_mark:
 ##### Block 1: Unix, Bash & Shell Script
 - [x] 1-3: *Unix & Bash - Part 1*
 - [x] 1-4: *Unix & Bash - Part 2*
@@ -79,6 +79,16 @@ Expected end date: **August 10, 2021** (1 year).
 - [x] 10-1: First steps at Jest
 - [x] 10-2: Jest - Asynchronous Tests
 - [x] 10-3: Jest - Simulating behaviors
-- [ ] 10-4: Project - Asynchronous Jest and Mocking
+- [x] 10-4: *[Project - Asynchronous Jest and Mocking]()*
+
+## Front-end Development :hourglass_flowing_sand:
+##### Block 11: Introduction to React
+- [x] 11-1: Hello, World in React!
+- [x] 11-2: React Components
+- [ ] 11-3: *[Project - Movie Cards Library]()*
+##### Block 12: Components with Status, Events and Forms with React
+- [ ] 12-1: Stateful components and events
+- [ ] 12-2: Forms in React
+- [ ] 12-3: *[Project - Movie Cards Library Stateful]()*
 
 ### [...]
