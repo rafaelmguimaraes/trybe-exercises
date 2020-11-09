@@ -85,7 +85,7 @@ Expected end date: **August 10, 2021** (1 year).
 ##### Block 11: Introduction to React
 - [x] 11-1: Hello, World in React!
 - [x] 11-2: React Components
-- [ ] 11-3: *[Project - Movie Cards Library]()*
+- [x] 11-3: *[Project - Movie Cards Library]()*
 ##### Block 12: Components with Status, Events and Forms with React
 - [ ] 12-1: Stateful components and events
 - [ ] 12-2: Forms in React
