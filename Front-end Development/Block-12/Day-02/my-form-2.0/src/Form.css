@@ -1,0 +1,74 @@
+.form {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: stretch;
+  background: #F6F8FF;
+}
+
+fieldset {
+  padding: 10px 0;
+  margin: 10px;
+}
+
+legend {
+  margin-left: 15px;
+  padding: 0 5px;
+}
+
+input, textarea, select {
+  font-family:inherit;
+  font-size: inherit;
+}
+
+input[type=text], select {
+  padding: 10px;
+  margin:5px 0;
+  border-radius:10px;
+  width:100%;
+  background-color: white;
+}
+
+textarea {
+  width:100%;
+  resize: vertical;
+  padding:15px;
+  border-radius:15px;
+  border:0;
+  box-shadow:4px 4px 10px rgba(0,0,0,0.06);
+  height:150px;
+  margin:5px 0;
+}
+
+label, span {
+  display:block;
+  margin-bottom:4px;
+  position: relative;
+  padding-left:20px; 
+  padding-right:10px;
+  cursor: pointer;
+}
+label input[type=radio] {
+  margin: 5px;
+}
+
+.error {
+  color: red;
+  font-size: xx-small;
+  font-weight: bold;
+  height:10px;
+  padding: 0;
+}
+
+.actions {
+  width: 80%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+}
+
+.actions button{
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
