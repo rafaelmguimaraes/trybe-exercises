@@ -87,8 +87,11 @@ Expected end date: **August 10, 2021** (1 year).
 - [x] 11-2: React Components
 - [x] 11-3: *[Project - Movie Cards Library]()*
 ##### Block 12: Components with Status, Events and Forms with React
-- [ ] 12-1: Stateful components and events
-- [ ] 12-2: Forms in React
-- [ ] 12-3: *[Project - Movie Cards Library Stateful]()*
-
+- [x] 12-1: Stateful components and events
+- [x] 12-2: Forms in React
+- [x] 12-3: *[Project - Movie Cards Library Stateful]()*
+##### Block 13: Life Cycle of Components and React Router
+- [x] 13-1: Component life cycle
+- [ ] 13-2: React Router
+- [ ] 13-3: *[Project - Movie Cards Library CRUD]()*
 ### [...]
