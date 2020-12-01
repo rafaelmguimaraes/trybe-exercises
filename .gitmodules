@@ -7,3 +7,6 @@
 [submodule "Front-end Development/Block-13/Day-02/exercise-router-fixation"]
 	path = Front-end Development/Block-13/Day-02/exercise-router-fixation
 	url = git@github.com:rafaelmguimaraes/exercise-router-fixation.git
+[submodule "Front-end Development/Block-13/Day-02/exercise-pokedex-router"]
+	path = Front-end Development/Block-13/Day-02/exercise-pokedex-router
+	url = git@github.com:rafaelmguimaraes/exercise-pokedex-router.git
