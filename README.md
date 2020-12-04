@@ -92,6 +92,16 @@ Expected end date: **August 10, 2021** (1 year).
 - [x] 12-3: *[Project - Movie Cards Library Stateful]()*
 ##### Block 13: Life Cycle of Components and React Router
 - [x] 13-1: Component life cycle
-- [ ] 13-2: React Router
-- [ ] 13-3: *[Project - Movie Cards Library CRUD]()*
+- [x] 13-2: React Router
+- [x] 13-3: *[Project - Movie Cards Library CRUD]()*
+##### Block 14: Agile Methodologies
+- [x] 14-1: Agile Methodologies
+- [x] 14-2: *[Project - Frontend Online Store]()*
+##### Block 15: Automated tests with React Testing Library
+- [x] 15-1: RTL - Getting Started
+- [x] 15-2: RTL - Mocks e Inputs
+- [x] 15-3: RTL - Testing React Router
+- [ ] 15-4: *[Project - React Tests]()*
+
+Agile Methodologies
 ### [...]
