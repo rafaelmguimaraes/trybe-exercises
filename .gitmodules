@@ -13,3 +13,9 @@
 [submodule "Front-end Development/Block-15/Day-01/exercise-todo-list"]
 	path = Front-end Development/Block-15/Day-01/exercise-todo-list
 	url = git@github.com:rafaelmguimaraes/exercise-todo-list.git
+[submodule "Front-end Development/Block-15/Day-01/exercise-tic-tac-toe"]
+	path = Front-end Development/Block-15/Day-01/exercise-tic-tac-toe
+	url = git@github.com:rafaelmguimaraes/exercise-tic-tac-toe.git
+[submodule "Front-end Development/Block-15/Day-02/exercise-digimon-finders"]
+	path = Front-end Development/Block-15/Day-02/exercise-digimon-finders
+	url = git@github.com:rafaelmguimaraes/exercise-digimon-finders.git
