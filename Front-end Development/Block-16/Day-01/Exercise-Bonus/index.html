@@ -12,8 +12,11 @@
               <button id="decrement">-</button>
               <button id="multi">Incrementa 10</button>
               <br />
-              <label>Valor a ser Incrementado / Decrementado: </label>
-              <input type="text" id="inputValue" value="1" />
+              <label>Valor a ser Incrementado: </label>
+              <input type="text" id="inputValueInc" value="1" style="width: 50px;"/>
+              <br />
+              <label>Valor a ser Decrementado: </label>
+              <input type="text" id="inputValueDec" value="1" style="width: 50px;"/>
             </div>
             <script>
 
@@ -32,15 +35,16 @@
               }
 
               const store = Redux.createStore(counterReducer);
-              const inputValue = document.getElementById('inputValue');  
+              const inputValueInc = document.getElementById('inputValueInc');  
+              const inputValueDec = document.getElementById('inputValueDec');  
               document.getElementById('increment')
                 .addEventListener('click', () => {
-                  store.dispatch({ type: INCREMENT, value: parseInt(inputValue.value) })
+                  store.dispatch({ type: INCREMENT, value: parseInt(inputValueInc.value) })
                 }
               )
               document.getElementById('decrement')
                 .addEventListener('click', () => {
-                  store.dispatch({ type: DECREMENT, value: parseInt(inputValue.value) });
+                  store.dispatch({ type: DECREMENT, value: parseInt(inputValueDec.value) });
                 }
               )
 
