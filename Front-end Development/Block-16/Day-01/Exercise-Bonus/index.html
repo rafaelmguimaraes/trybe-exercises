@@ -23,14 +23,15 @@
 
               const INCREMENT = 'INCREMENT';
               const DECREMENT = 'DECREMENT';
-              const INITIAL_STATE = { count: 0, clickCount: 0 };
+              const INITIAL_STATE = { count: 0, clickCount: 0 , logValues: [] };
 
               function counterReducer(state = INITIAL_STATE, action) {
+                const { count, clickCount, logValues } = state;
                 switch (action.type) {
                   case INCREMENT:
-                    return { count: state.count + action.value, clickCount: state.clickCount + 1 };
+                    return { count: count + action.value, clickCount: clickCount + 1, logValues: [...logValues, action.value] };
                   case DECREMENT:
-                    return { count: state.count - action.value, clickCount: state.clickCount + 1 };
+                    return { count: count - action.value, clickCount: clickCount + 1, logValues: [...logValues, (action.value*-1)] };
                   default:
                     return state;
                 }
@@ -59,6 +60,7 @@
               store.subscribe(() => { 
                 document.getElementById('value').innerHTML = store.getState().count.toString();
                 document.getElementById('clickedValue').innerHTML = store.getState().clickCount.toString();
+                console.log(store.getState().logValues);
               });
 
             </script>
