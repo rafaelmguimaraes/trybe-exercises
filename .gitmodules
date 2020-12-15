@@ -25,3 +25,6 @@
 [submodule "Front-end Development/Block-16/Day-02/exercise-react-with-redux-intro"]
 	path = Front-end Development/Block-16/Day-02/exercise-react-with-redux-intro
 	url = git@github.com:rafaelmguimaraes/exercise-react-with-redux-intro.git
+[submodule "Front-end Development/Block-16/Day-03/exercise-trybe-customer"]
+	path = Front-end Development/Block-16/Day-03/exercise-trybe-customer
+	url = git@github.com:rafaelmguimaraes/exercise-trybe-customer.git
