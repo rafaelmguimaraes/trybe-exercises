@@ -28,3 +28,6 @@
 [submodule "Front-end Development/Block-16/Day-03/exercise-trybe-customer"]
 	path = Front-end Development/Block-16/Day-03/exercise-trybe-customer
 	url = git@github.com:rafaelmguimaraes/exercise-trybe-customer.git
+[submodule "Front-end Development/Block-16/Day-04/exercise-game-of-thrones-characters"]
+	path = Front-end Development/Block-16/Day-04/exercise-game-of-thrones-characters
+	url = git@github.com:rafaelmguimaraes/exercise-game-of-thrones-characters.git
