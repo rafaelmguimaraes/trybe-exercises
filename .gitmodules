@@ -34,3 +34,6 @@
 [submodule "Front-end Development/Block-16/Day-04/exercise-trybe-reddit"]
 	path = Front-end Development/Block-16/Day-04/exercise-trybe-reddit
 	url = git@github.com:rafaelmguimaraes/exercise-trybe-reddit.git
+[submodule "Front-end Development/Block-18/Day-01/exercise-contextAPI-refactoring"]
+	path = Front-end Development/Block-18/Day-01/exercise-contextAPI-refactoring
+	url = git@github.com:rafaelmguimaraes/exercise-contextAPI-refactoring.git
